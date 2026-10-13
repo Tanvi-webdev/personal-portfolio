@@ -1,7 +1,3 @@
-/* =========================================
-   1. DESIGN TOKENS AND RESET
-========================================= */
-
 :root {
     --bg: #f7f8fa;
     --surface: #ffffff;
@@ -76,9 +72,9 @@ img {
     margin-inline: auto;
 }
 
-/* =========================================
+/*
    2. SECTION LAYOUT
-========================================= */
+*/
 
 .section {
     /* No scroll-margin: JavaScript handles navigation offset. */
@@ -125,9 +121,9 @@ img {
     text-underline-offset: 5px;
 }
 
-/* =========================================
+/*
    3. STICKY NAVIGATION
-========================================= */
+*/
 
 .site-header {
     position: sticky;
@@ -210,9 +206,9 @@ img {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-/* =========================================
+/*
    4. HOME / HERO
-========================================= */
+*/
 
 .hero {
     position: relative;
@@ -333,9 +329,9 @@ img {
     pointer-events: none;
 }
 
-/* =========================================
+/*
    5. ABOUT
-========================================= */
+*/
 
 .about-grid {
     display: grid;
@@ -355,9 +351,9 @@ img {
     color: var(--muted);
 }
 
-/* =========================================
+/*
    6. SKILLS
-========================================= */
+ */
 
 .skills-grid {
     display: grid;
@@ -400,9 +396,9 @@ img {
     font-size: 0.9rem;
 }
 
-/* =========================================
+/*
    7. PROJECTS
-========================================= */
+ */
 
 .projects-grid {
     display: grid;
@@ -487,9 +483,9 @@ img {
     font-size: 0.85rem;
 }
 
-/* =========================================
+/*
    8. CONTACT AND FORM
-========================================= */
+*/
 
 .contact-grid {
     display: grid;
@@ -568,9 +564,9 @@ img {
     overflow-wrap: anywhere;
 }
 
-/* =========================================
+/* 
    9. FOOTER
-========================================= */
+ */
 
 .site-footer {
     padding: 24px 0;
@@ -640,10 +636,10 @@ img {
     transform: translateY(0);
 }
 
-/* =========================================
+/* 
    11. OPTIONAL REVEAL ANIMATION
    Content remains visible if JS fails.
-========================================= */
+ */
 
 .js-enabled .reveal {
     opacity: 0;

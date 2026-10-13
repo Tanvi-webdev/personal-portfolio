@@ -1,11 +1,10 @@
 "use strict";
 
-/* Enable animation styles only when JavaScript is running. */
 document.documentElement.classList.add("js-enabled");
 
-/* =========================================
+/* 
    1. SELECT ELEMENTS
-========================================= */
+*/
 
 const header = document.querySelector(".site-header");
 const menuToggle = document.querySelector(".menu-toggle");
@@ -19,9 +18,9 @@ const sections = Array.from(
 );
 
 
-/* =========================================
+/* 
    2. MOBILE NAVIGATION
-========================================= */
+*/
 
 function closeMenu() {
     if (!menuToggle || !navLinks) return;
@@ -71,16 +70,16 @@ window.addEventListener("resize", () => {
 });
 
 
-/* =========================================
+/* 
    3. PRECISE SECTION SCROLLING
-========================================= */
+ */
 
 /*
- * Calculate the section's document position and subtract
- * the actual visible navbar height.
- *
- * This avoids relying on scroll-margin and scroll-padding,
- * which were competing with the previous scroll behavior.
+   Calculate the section's document position and subtract
+   the actual visible navbar height.
+  
+   This avoids relying on scroll-margin and scroll-padding,
+   which were competing with the previous scroll behavior.
  */
 function scrollToSection(section, behavior = "smooth") {
     if (!section) return;
@@ -104,8 +103,8 @@ function scrollToSection(section, behavior = "smooth") {
 }
 
 /*
- * Handle internal links consistently:
- * navbar links, hero buttons, the About link and logo.
+   Handle internal links consistently:
+   navbar links, hero buttons, the About link and logo.
  */
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener("click", (event) => {
@@ -135,8 +134,8 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 });
 
 /*
- * Correct the scroll position when the page is opened
- * directly with a URL such as index.html#projects.
+   Correct the scroll position when the page is opened
+   directly with a URL such as index.html#projects.
  */
 function alignInitialHash() {
     const hash = window.location.hash;
@@ -170,7 +169,7 @@ window.addEventListener("pageshow", () => {
 });
 
 /*
- * Handle browser Back and Forward navigation.
+   Handle browser Back and Forward navigation.
  */
 window.addEventListener("popstate", () => {
     if (window.location.hash) {
